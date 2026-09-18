@@ -1,0 +1,16 @@
+{
+  "name": "medirect-etf-scraper",
+  "version": "1.0.0",
+  "description": "Microservice Playwright pour extraire les infos ETF (filtres World / EUR / Capitalisation) depuis online.medirect.be",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "login": "node scripts/login-once.js",
+    "encode-session": "node scripts/encode-session.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "playwright": "^1.47.0"
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+medirect-session.json
+*.session.json
+.env
