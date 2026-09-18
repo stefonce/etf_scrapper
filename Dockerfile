@@ -6,9 +6,9 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci --omit=dev
 
-# Code de l'app
+# Code de l'app (les scripts login-once.js / encode-session.js sont
+# à usage local uniquement et n'ont pas besoin d'être dans l'image)
 COPY server.js ./
-COPY scripts ./scripts
 
 ENV NODE_ENV=production
 ENV PORT=3000
